@@ -11,7 +11,7 @@ void setup(){
   Serial.begin(9600);
   pinMode(13,OUTPUT);
 
-  Serial.print("=== Smart Countdown Starting ===");
+  Serial.println("=== Smart Countdown Starting ===");
 
   while( startValue >= 1){
     Serial.print("Count: ");
