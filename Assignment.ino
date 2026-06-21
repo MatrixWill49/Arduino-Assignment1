@@ -2,9 +2,9 @@ int startValue = 5;
 void flashLED(int times){
   for (int count= 0; count < times; count++){
   digitalWrite(13,HIGH);
-  delay(1000);
+  delay(2000);
   digitalWrite(13,LOW);
-  delay(1000);
+  delay(200);
   }
 }
 void setup(){
@@ -17,6 +17,7 @@ void setup(){
     Serial.print("Count: ");
     Serial.println(startValue);
     flashLED(startValue);
+    delay(300);
     startValue = startValue -1;
   }
   Serial.println("=== Countdown Complete ===");
